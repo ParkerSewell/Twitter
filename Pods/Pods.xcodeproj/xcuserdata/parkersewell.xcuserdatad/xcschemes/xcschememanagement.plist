@@ -6,6 +6,7 @@
 	<dict>
 		<key>AFNetworking.xcscheme</key>
 		<dict>
+<<<<<<< HEAD
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
@@ -18,6 +19,20 @@
 		<dict>
 			<key>orderHint</key>
 			<integer>3</integer>
+=======
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>BDBOAuth1Manager.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Parker_Twitter.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+>>>>>>> 1a38d164a2bd23618916f5336a9b818da49dbc21
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -32,7 +47,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+<<<<<<< HEAD
 		<key>D7E3EBC9D05B705EC879D01082CF9AA2</key>
+=======
+		<key>EFD3D9E4464CCF0256FEF88F36DEDE9A</key>
+>>>>>>> 1a38d164a2bd23618916f5336a9b818da49dbc21
 		<dict>
 			<key>primary</key>
 			<true/>
