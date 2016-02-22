@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Project 4 - *Twitter*
 
 **Name of your app** is a basic twitter app to read and compose tweets the [Twitter API](https://apps.twitter.com/).
@@ -56,3 +57,7 @@ Describe any challenges encountered while building the app.
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
+=======
+# Twitter
+A twitter clone
+>>>>>>> 27238cd47e9c884f6c5758f93219a727d696c2ee
