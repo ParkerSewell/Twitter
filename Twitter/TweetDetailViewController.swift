@@ -53,6 +53,8 @@ class TweetDetailViewController: UIViewController {
     }
     
     @IBAction func replyButtonPressed(sender: AnyObject) {
+        print("Reply button pressed")
+        
     }
    
     @IBAction func retweetButtonPressed(sender: AnyObject) {

@@ -17,6 +17,7 @@ class TweetCell: UITableViewCell {
     
     var delegate: TweetCellDelegate?
 
+    
     @IBOutlet weak var thumbImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var usernameLabel: UILabel!
@@ -86,6 +87,7 @@ class TweetCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+
     }
 
     @IBAction func retweetButtonPressed(sender: AnyObject) {
@@ -134,5 +136,6 @@ class TweetCell: UITableViewCell {
             }
         }
     }
+    
     
 }

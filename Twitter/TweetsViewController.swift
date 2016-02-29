@@ -14,6 +14,7 @@ class TweetsViewController: UIViewController, UITableViewDataSource, UITableView
     @IBOutlet weak var tableView: UITableView!
     var tweets: [Tweet]?
     
+    @IBOutlet weak var composeButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,6 +45,7 @@ class TweetsViewController: UIViewController, UITableViewDataSource, UITableView
         imageView.contentMode = .ScaleAspectFit
         imageView.image = UIImage(named: "Twitter_logo_blue_48")
         navigationItem.titleView = imageView
+
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -67,6 +69,10 @@ class TweetsViewController: UIViewController, UITableViewDataSource, UITableView
         User.currentUser?.logout()
     }
     
+    @IBAction func onCompose(sender: AnyObject) {
+        print("Compose button pressed")
+        
+    }
 
     // MARK: - Navigation
 
@@ -82,7 +88,20 @@ class TweetsViewController: UIViewController, UITableViewDataSource, UITableView
             
             let tweetDetailViewController = segue.destinationViewController as! TweetDetailViewController
             tweetDetailViewController.tweet = tweet
+        }else if (segue.identifier == "userSegue") {
+            let button = sender as! UIButton
+            let view = button.superview!
+            let cell = view.superview as! TweetCell
+            
+            let indexPath = tableView.indexPathForCell(cell)
+            
+            let tweet = tweets![indexPath!.row]
+            tableView.deselectRowAtIndexPath(indexPath!, animated: true)
+            
+            let userViewController = segue.destinationViewController as! UserViewController
+            userViewController.tweet = tweet
         }
+
         
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
