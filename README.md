@@ -48,6 +48,8 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
+A weird error that kept me from being able to view the user's profile page. App kept crashing. 
+
 Describe any challenges encountered while building the app.
 
 ## License
