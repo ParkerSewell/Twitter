@@ -10,7 +10,7 @@ The following **required** functionality is completed:
 - [x ] Profile page:
    - [ x] Contains the user header view
    - [ x] Contains a section with the users basic stats: # tweets, # following, # followers
-- [ ] Home Timeline: Tapping on a user image should bring up that user's profile page
+- [x ] Home Timeline: Tapping on a user image should bring up that user's profile page
 - [x ] Compose Page: User can compose a new tweet by tapping on a compose button.
 - 
 *I kept having a strange execution error and couldn't figure out how to fix it in time. This kept me from being able to click on an image and go to the user's profile.*
@@ -48,9 +48,9 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-A weird error that kept me from being able to view the user's profile page. App kept crashing. 
 
 Describe any challenges encountered while building the app.
+I had trouble with a nil unwrapping. It was weird, but I got it! :)
 
 ## License
 
