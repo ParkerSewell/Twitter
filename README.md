@@ -1,6 +1,6 @@
 # Project 5 - *Twitter*
 
-Time spent: **10** hours spent in total
+Time spent: **17** hours spent in total
 
 ## User Stories
 
