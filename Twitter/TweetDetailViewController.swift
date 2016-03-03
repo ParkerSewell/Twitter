@@ -28,6 +28,7 @@ class TweetDetailViewController: UIViewController {
         print(tweet)
         
         // Do any additional setup after loading the view.
+       
         tweetTextLabel.text = tweet.text
         thumbImageView.setImageWithURL(NSURL(string: tweet.user!.profileImageUrl!)!)
         nameLabel.text = tweet.user!.name!

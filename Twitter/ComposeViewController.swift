@@ -27,7 +27,7 @@ class ComposeViewController: UIViewController {
     }
     
     @IBAction func cancelTweetButtonPressed(sender: AnyObject) {
-        self.dismissViewControllerAnimated(true, completion: nil)
+            self.dismissViewControllerAnimated(true, completion: nil)
         
     }
 

@@ -10,7 +10,8 @@ import UIKit
 
 class UserViewController: UIViewController {
     
-    @IBOutlet weak var profileImage: UIImageView!
+
+    @IBOutlet weak var thumbImageView: UIImageView!
     
     @IBOutlet weak var userName: UILabel!
 
@@ -29,7 +30,7 @@ class UserViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        profileImage.setImageWithURL(NSURL(string: (tweet.user?.profileImageUrl!)!)!)
+        thumbImageView.setImageWithURL(NSURL(string: (tweet.user?.profileImageUrl!)!)!)
         userName.text = tweet.user!.name!
         twitterHandle.text = "@\(tweet.user!.screenname!)"
         profileDescription.text = tweet.user?.tagline!

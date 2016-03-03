@@ -30,6 +30,8 @@ class User: NSObject {
         screenname = dictionary["screen_name"] as! String
         profileImageUrl = dictionary["profile_image_url"] as? String
         tagline = dictionary["description"] as? String
+        followers = dictionary["followers_count"] as? Int
+        following = dictionary["friends_count"] as? Int
     }
     
     func logout() {
@@ -41,14 +43,14 @@ class User: NSObject {
     
     class var currentUser: User? {
         get {
-            if (_currentUser == nil) {
-                var data = NSUserDefaults.standardUserDefaults().objectForKey(currentUserKey) as? NSData
-                if (data != nil) {
-                    var dictionary = try?NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments) as! NSDictionary
-                    _currentUser = User(dictionary: dictionary!)
-                }
-            }
-            return _currentUser
+        if (_currentUser == nil) {
+        var data = NSUserDefaults.standardUserDefaults().objectForKey(currentUserKey) as? NSData
+        if (data != nil) {
+        var dictionary = try?NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments) as! NSDictionary
+        _currentUser = User(dictionary: dictionary!)
+        }
+        }
+        return _currentUser
         }
         set(user) {
             
